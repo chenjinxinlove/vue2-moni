@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <Header></Header>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Header from './components/header/header';
 
 export default {
   name: 'app',
   components: {
-    Hello
+    Header
   }
-}
+};
 </script>
 
 <style type="stylus">
