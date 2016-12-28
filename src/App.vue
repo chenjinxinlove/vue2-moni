@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <Header></Header>
+    <mNheader></mNheader>
+    <mNbar></mNbar>
   </div>
 </template>
 
 <script>
-import Header from './components/header/header';
+import mNheader from './components/header/header';
+import mNbar from './components/bar/bar';
 
 export default {
   name: 'app',
   components: {
-    Header
+    mNheader,
+    mNbar
   }
 };
 </script>
