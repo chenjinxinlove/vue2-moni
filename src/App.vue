@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <mNheader></mNheader>
+    <router-view ></router-view>
     <mNbar></mNbar>
   </div>
 </template>
@@ -10,7 +11,6 @@ import mNheader from './components/header/header';
 import mNbar from './components/bar/bar';
 
 export default {
-  name: 'app',
   components: {
     mNheader,
     mNbar
