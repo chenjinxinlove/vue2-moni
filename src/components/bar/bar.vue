@@ -1,34 +1,26 @@
 <template>
   <div class="bar">
     <mt-tabbar v-model="selected" :fixed=true :value="selected">
-      <router-link to="/index">
-        <mt-tab-item id="推荐" >
-          <i slot="icon" class="tj"></i>
-          推荐
-        </mt-tab-item>
-      </router-link>
-      <router-link to="/file">
-        <mt-tab-item id="电影" >
-          <i slot="icon" class="dy"></i>
-          电影
-        </mt-tab-item>
-      </router-link>
-      <router-link to="/show">
-        <mt-tab-item id="演出">
-          <i slot="icon" class="yc"></i>
-          演出
-        </mt-tab-item>
-      </router-link>
-      <router-link to="/circle">
-        <mt-tab-item id="饭圈" >
-          <i slot="icon" class="fq"></i>
-          饭圈
-        </mt-tab-item>
-      </router-link>
-        <mt-tab-item id="我的" to="/home">
-          <i slot="icon" class="wd"></i>
-          我的
-        </mt-tab-item>
+      <mt-tab-item id="index" >
+        <i slot="icon" class="tj"></i>
+        推荐
+      </mt-tab-item>
+      <mt-tab-item id="film" >
+        <i slot="icon" class="dy"></i>
+        电影
+      </mt-tab-item>
+      <mt-tab-item id="show">
+        <i slot="icon" class="yc"></i>
+        演出
+      </mt-tab-item>
+      <mt-tab-item id="circle" >
+        <i slot="icon" class="fq"></i>
+        饭圈
+      </mt-tab-item>
+      <mt-tab-item id="home">
+        <i slot="icon" class="wd"></i>
+        我的
+      </mt-tab-item>
     </mt-tabbar>
   </div>
 </template>
@@ -44,14 +36,14 @@
       .yc
         background-position 22% 0
       .fq
-        background-position 44% 0
+        background-position 44.5% 0
       .wd
-        background-position 33% 0
+        background-position 33.5% 0
     .is-selected
       .tj
-        background-position  55% 0
+        background-position  55.5% 0
       .dy
-        background-position 66% 0
+        background-position 66.5% 0
       .yc
         background-position 78% 0
       .fq
@@ -68,12 +60,18 @@
   export default{
     data: function () {
       return {
-        selected: '推荐'
+        selected: this.$store.state.selected
       };
     },
     components: {
       mtTabbar: Tabbar,
       mtTabItem: TabItem
+    },
+    watch: {
+      'selected': function (val) {
+        this.$store.commit('changeSelected', val);
+        this.$router.push(val);
+      }
     }
   };
 </script>

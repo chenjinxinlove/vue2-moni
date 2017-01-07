@@ -2,7 +2,7 @@
   <div id="app">
     <mNheader></mNheader>
     <router-view ></router-view>
-    <mNbar></mNbar>
+    <mNbar ></mNbar>
   </div>
 </template>
 
@@ -14,6 +14,11 @@ export default {
   components: {
     mNheader,
     mNbar
+  },
+  created: function () {
+    if (this.$route.name === undefined) {
+        this.$router.push(this.$store.state.selected);
+    };
   }
 };
 </script>

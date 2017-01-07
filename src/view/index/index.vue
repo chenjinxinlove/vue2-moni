@@ -1,17 +1,186 @@
 <template>
-  <div>
-    推荐
+  <div class="main">
+    <Swipe :swipeWidth="swipeWidth" :swipeHeight="swipeHeight" :swipeImgs="swipeImgs"></Swipe>
+    <nav class="r-icons">
+      <div class="menu-item touching" data-url="/card/index" data-log="{&quot;da_src&quot;: &quot;icon_3&quot;}">
+        <img src="https://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/assets/movie/20161116/i-member.png">
+        <span class="text">会员卡</span>
+      </div>
+      <div class="menu-item touching" data-url="/mall/index" data-log="{&quot;da_src&quot;: &quot;icon_10&quot;}">
+        <img src="https://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/assets/movie/20161116/i-mall.png">
+        <span class="text">商城</span>
+      </div>
+      <div class="menu-item touching" data-url="/fan/liveList" data-log="{&quot;da_src&quot;: &quot;icon_13&quot;}">
+        <img src="https://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/assets/movie/20161116/i-live.png">
+        <span class="text">直播</span>
+      </div>
+      <div class="menu-item touching" data-url="/video/index" data-log="{&quot;da_src&quot;: &quot;icon_4&quot;}">
+        <img src="https://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/assets/movie/20161116/i-video.png">
+        <span class="text">视频</span>
+      </div>
+      <div class="menu-item touching" data-url="/rank/index" data-log="{&quot;da_src&quot;: &quot;icon_5&quot;}">
+        <img src="https://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/assets/movie/20161116/i-box.png">
+        <span class="text">票房</span>
+      </div>
+    </nav>
+    <div class="activity">
+      <div class="left">
+        <div style="display:inline-block;width:50%">
+          <p class="title">六块六起</p>
+          <p class="describe">超级星期六</p>
+        </div>
+        <div class="pic" style="background-image: url(https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/bainuo_cmovie/pic/item/aec379310a55b319a6c412244aa98226cffc17a5.png)"></div>
+      </div>
+      <div class="right">
+        <div style="display:inline-block;width:50%">
+          <p class="title">热门话剧</p>
+          <p class="describe">TOP10</p>
+        </div>
+        <div class="pic" style="background-image: url(https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/bainuo_cmovie/pic/item/6c224f4a20a44623709b29189122720e0cf3d773.png)"></div>
+      </div>
+    </div>
+    <div class="movie-wrapper">
+
+    </div>
+    <div class="movieHouse">
+      <div class="house" v-for="mHouse in movieHouses">
+        <p class="title">{{ mHouse.name }}</p>
+        <p class="des">{{ mHouse.des }}</p>
+      </div>
+    </div>
+    <div class="more">
+      全部影院 <i class="icon-aw"></i>
+    </div>
+    <div style="height:500px">
+
+    </div>
+    <div class="pop">
+      <Pop></Pop>
+    </div>
   </div>
 </template>
 <style lang="stylus" rel="stylesheet/stylus">
-
+  .main
+    background rgba(204, 204, 204,.7)
+    .r-icons
+      height 80px
+      padding 12px 5px 1px
+      display flex
+      border-bottom 1px solid #ccc
+      background #fff
+      .menu-item
+        width 20%
+        img
+          height 47px
+          width 47px
+          display block
+          margin 0 auto
+        .text
+          margin-top 5px
+          display block
+          text-align center
+    .pop
+      position fixed
+      right 2px
+      top 60%
+      height 70px
+      width 80px
+    .activity
+      display flex
+      width 100%
+      height 65px
+      background #fff
+      .left
+        width 50%
+        padding 5px 17px
+        box-sizing border-box
+        border-right 1px solid #ccc
+        .title
+          margin 5px 0
+          font-size 16px
+        .describe
+          font-size 12px
+          color #ccc
+        .pic
+          display inline-block
+          vertical-align top
+          width 63px
+          height 50px
+          background-position center
+          background-size cover
+      .right
+        width 50%
+        padding 5px 17px
+        box-sizing border-box
+        border-right 1px solid #ccc
+        .title
+          margin 5px 0
+          font-size 16px
+          color red
+        .describe
+          font-size 12px
+          color #ccc
+        .pic
+          display inline-block
+          vertical-align top
+          width 63px
+          height 50px
+          background-position center
+          background-size cover
+    .movie-wrapper
+      margin 10px 0
+      width 100%
+      height 226px
+      background #fff
+    .movieHouse
+      background #fff
+      padding 20px 10px 0px 20px
+      .house
+        height 50px
+        .title
+          font-size 16px
+        .des
+          font-size 12px
+          overflow hidden
+          word-break keep-all
+          white-space nowrap
+          overflow hidden
+          text-overflow ellipsis
+    .more
+      display flex
+      justify-content center
+      align-items center
+      height 50px
+      line-height 50px
+      background #fff
+      color #999
+      font-size 16px
+      border-top 1px solid #ccc
 </style>
 <script>
+  import swipe from './../../components/swipe/swipe';
+  import pop from './../../components/pop/pop';
+
   export default{
     data: function () {
-      return {};
+      return {
+        swipeWidth: '100%',
+        swipeHeight: '90px',
+        swipeImgs: [
+        {a: '#', imgSrc: 'https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=b750_2343750&quality=85&name=cmoive&di=0822806508b7fa46017c1b86be519df5&sec=0&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fbainuo_cmovie%2Fpic%2Fitem%2Fa71ea8d3fd1f41347352f72e2c1f95cad1c85e7d.jpeg'},
+        {a: '#', imgSrc: 'https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=b750_2343750&quality=85&name=cmoive&di=b75f1ec0fe4d262541c16939dc869ead&sec=0&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fbainuo_cmovie%2Fpic%2Fitem%2Fa6efce1b9d16fdfa4ad452bebd8f8c5494ee7b22.jpeg'},
+        {a: '#', imgSrc: 'https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=b750_2343750&quality=85&name=cmoive&di=d6da5ecae7ce28be59b7b2feec787400&sec=0&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fbainuo_cmovie%2Fpic%2Fitem%2F5882b2b7d0a20cf4e0315cb97f094b36acaf9937.jpeg'}
+        ],
+        movieHouses: [
+          {name: '星美国际影城(北京金源店)', des: '北京市海淀区远大路1号金源时代购物中心5层东首511'},
+          {name: '北京横店电影城(王府井店)', des: '北京市东城区王府井大街253号王府井百货(北京市百货大楼)北馆8F'},
+          {name: '星美国际影城(北京分钟寺店)', des: '北京市丰台区南三环东路成寿寺路2号新业广场2层'}
+        ]
+      };
     },
     components: {
+      Swipe: swipe,
+      Pop: pop
     }
   };
 </script>

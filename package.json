@@ -13,8 +13,7 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
-    "mint-ui": "^2.0.6",
-    "vue": "^2.0.1",
+    "vue": "^2.1.8",
     "vue-router": "^2.0.3",
     "vuex": "^2.0.0"
   },
@@ -63,6 +62,7 @@
     "lolex": "^1.4.0",
     "min": "^0.1.17",
     "min-model": "^0.1.11",
+    "mint-ui": "^2.1.0",
     "mocha": "^3.1.0",
     "nightwatch": "^0.9.8",
     "opn": "^4.0.2",
