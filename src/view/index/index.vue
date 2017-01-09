@@ -1,58 +1,66 @@
 <template>
-  <div class="main">
-    <Swipe :swipeWidth="swipeWidth" :swipeHeight="swipeHeight" :swipeImgs="swipeImgs"></Swipe>
-    <nav class="r-icons">
-      <div class="menu-item touching" data-url="/card/index" data-log="{&quot;da_src&quot;: &quot;icon_3&quot;}">
-        <img src="https://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/assets/movie/20161116/i-member.png">
-        <span class="text">会员卡</span>
-      </div>
-      <div class="menu-item touching" data-url="/mall/index" data-log="{&quot;da_src&quot;: &quot;icon_10&quot;}">
-        <img src="https://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/assets/movie/20161116/i-mall.png">
-        <span class="text">商城</span>
-      </div>
-      <div class="menu-item touching" data-url="/fan/liveList" data-log="{&quot;da_src&quot;: &quot;icon_13&quot;}">
-        <img src="https://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/assets/movie/20161116/i-live.png">
-        <span class="text">直播</span>
-      </div>
-      <div class="menu-item touching" data-url="/video/index" data-log="{&quot;da_src&quot;: &quot;icon_4&quot;}">
-        <img src="https://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/assets/movie/20161116/i-video.png">
-        <span class="text">视频</span>
-      </div>
-      <div class="menu-item touching" data-url="/rank/index" data-log="{&quot;da_src&quot;: &quot;icon_5&quot;}">
-        <img src="https://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/assets/movie/20161116/i-box.png">
-        <span class="text">票房</span>
-      </div>
-    </nav>
-    <div class="activity">
-      <div class="left">
-        <div style="display:inline-block;width:50%">
-          <p class="title">六块六起</p>
-          <p class="describe">超级星期六</p>
+  <div class="main" ref="main">
+    <div>
+      <Swipe :swipeWidth="swipeWidth" :swipeHeight="swipeHeight" :swipeImgs="swipeImgs"></Swipe>
+      <nav class="r-icons">
+        <div class="menu-item touching" data-url="/card/index" data-log="{&quot;da_src&quot;: &quot;icon_3&quot;}">
+          <img src="https://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/assets/movie/20161116/i-member.png">
+          <span class="text">会员卡</span>
         </div>
-        <div class="pic" style="background-image: url(https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/bainuo_cmovie/pic/item/aec379310a55b319a6c412244aa98226cffc17a5.png)"></div>
-      </div>
-      <div class="right">
-        <div style="display:inline-block;width:50%">
-          <p class="title">热门话剧</p>
-          <p class="describe">TOP10</p>
+        <div class="menu-item touching" data-url="/mall/index" data-log="{&quot;da_src&quot;: &quot;icon_10&quot;}">
+          <img src="https://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/assets/movie/20161116/i-mall.png">
+          <span class="text">商城</span>
         </div>
-        <div class="pic" style="background-image: url(https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/bainuo_cmovie/pic/item/6c224f4a20a44623709b29189122720e0cf3d773.png)"></div>
+        <div class="menu-item touching" data-url="/fan/liveList" data-log="{&quot;da_src&quot;: &quot;icon_13&quot;}">
+          <img src="https://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/assets/movie/20161116/i-live.png">
+          <span class="text">直播</span>
+        </div>
+        <div class="menu-item touching" data-url="/video/index" data-log="{&quot;da_src&quot;: &quot;icon_4&quot;}">
+          <img src="https://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/assets/movie/20161116/i-video.png">
+          <span class="text">视频</span>
+        </div>
+        <div class="menu-item touching" data-url="/rank/index" data-log="{&quot;da_src&quot;: &quot;icon_5&quot;}">
+          <img src="https://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/assets/movie/20161116/i-box.png">
+          <span class="text">票房</span>
+        </div>
+      </nav>
+      <div class="activity">
+        <div class="left">
+          <div style="display:inline-block;width:50%">
+            <p class="title">六块六起</p>
+            <p class="describe">超级星期六</p>
+          </div>
+          <div class="pic" style="background-image: url(https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/bainuo_cmovie/pic/item/aec379310a55b319a6c412244aa98226cffc17a5.png)"></div>
+        </div>
+        <div class="right">
+          <div style="display:inline-block;width:50%">
+            <p class="title">热门话剧</p>
+            <p class="describe">TOP10</p>
+          </div>
+          <div class="pic" style="background-image: url(https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/bainuo_cmovie/pic/item/6c224f4a20a44623709b29189122720e0cf3d773.png)"></div>
+        </div>
       </div>
-    </div>
-    <div class="movie-wrapper">
+      <div class="movie-wrapper" ref="movieWrapper">
+        <div class="movie" ref="movie" >
+          <div v-for="m in movies">
+            <Movie :m="m"></Movie>
+          </div>
+          <div class="more-btn"><span>全部影片</span></div>
+        </div>
 
-    </div>
-    <div class="movieHouse">
-      <div class="house" v-for="mHouse in movieHouses">
-        <p class="title">{{ mHouse.name }}</p>
-        <p class="des">{{ mHouse.des }}</p>
       </div>
-    </div>
-    <div class="more">
-      全部影院 <i class="icon-aw"></i>
-    </div>
-    <div style="height:500px">
+      <div class="movieHouse">
+        <div class="house" v-for="mHouse in movieHouses">
+          <p class="title">{{ mHouse.name }}</p>
+          <p class="des">{{ mHouse.des }}</p>
+        </div>
+      </div>
+      <div class="more">
+        全部影院 <i class="icon-aw"></i>
+      </div>
+      <div style="height:500px">
 
+      </div>
     </div>
     <div class="pop">
       <Pop></Pop>
@@ -61,6 +69,11 @@
 </template>
 <style lang="stylus" rel="stylesheet/stylus">
   .main
+    position: absolute;
+    top: 50px;
+    bottom: 55px;
+    width: 100%;
+    overflow: hidden;
     background rgba(204, 204, 204,.7)
     .r-icons
       height 80px
@@ -129,10 +142,26 @@
           background-size cover
     .movie-wrapper
       margin 10px 0
-      width 100%
+      overflow hidden
       height 226px
       background #fff
-    .movieHouse
+      .movie
+        padding 20px 10px
+        display flex
+        .more-btn
+          width: 1.875em;
+          height: 160px;
+          box-sizing: border-box;
+          float: left;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          color: #333;
+          padding: .9375em;
+          line-height: 20px;
+          border 1px solid #ccc
+  .movieHouse
       background #fff
       padding 20px 10px 0px 20px
       .house
@@ -144,7 +173,6 @@
           overflow hidden
           word-break keep-all
           white-space nowrap
-          overflow hidden
           text-overflow ellipsis
     .more
       display flex
@@ -160,6 +188,11 @@
 <script>
   import swipe from './../../components/swipe/swipe';
   import pop from './../../components/pop/pop';
+  import movie from './../../components/movie/movie';
+  import BScroll from 'better-scroll';
+  import axios from 'axios';
+
+  const ERR_OK = 0;
 
   export default{
     data: function () {
@@ -175,12 +208,56 @@
           {name: '星美国际影城(北京金源店)', des: '北京市海淀区远大路1号金源时代购物中心5层东首511'},
           {name: '北京横店电影城(王府井店)', des: '北京市东城区王府井大街253号王府井百货(北京市百货大楼)北馆8F'},
           {name: '星美国际影城(北京分钟寺店)', des: '北京市丰台区南三环东路成寿寺路2号新业广场2层'}
-        ]
+        ],
+        movies: []
       };
     },
     components: {
       Swipe: swipe,
-      Pop: pop
+      Pop: pop,
+      Movie: movie
+    },
+    created () {
+      this.$nextTick(() => {
+        this._initScroll();
+      });
+      axios.get('/api/movie')
+        .then((res) => {
+          var data = res.data;
+          if (data.errno === ERR_OK) {
+              this.movies = data.data;
+              this.$nextTick(() => {
+                this._initMoviesScroll();
+              });
+            };
+        });
+    },
+    methods: {
+      _initScroll () {
+        this.main = new BScroll(this.$refs.main, {
+          click: true
+        });
+      },
+      _initMoviesScroll () {
+        if (this.movies) {
+          let picWidth = 106;
+        let margin = 5;
+        let width = (picWidth + margin) * this.movies.length - margin;
+        this.$refs.movie.style.width = width + 100 + 'px';
+          this.$nextTick(() => {
+            if (!this.movieWrapper) {
+              this.movieWrapper = new BScroll(this.$refs.movieWrapper, {
+                scrollX: true,
+                scrollY: false,
+                eventPassthrougt: 'vertical'
+              });
+            } else {
+              this.movieWrapper.refresh();
+            }
+          });
+        }
+      }
     }
   };
+
 </script>

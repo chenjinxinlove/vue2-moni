@@ -1,0 +1,36 @@
+{
+  "movie": [
+    {
+      "name": "星球大战外传：侠盗一号",
+      "tag": "new",
+      "tagName":"新片",
+      "score": "7.5",
+      "imgSrc": "https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=f427_596&quality=85&name=cmoive&di=521a407157383ffb06bea0721031cea9&sec=0&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fmovie%2Fpic%2Fitem%2Ff31fbe096b63f624b6c86d188e44ebf81a4ca310.jpg"
+    },
+    {
+      "name": "情圣",
+      "tag": "0",
+      "score": "8.2",
+      "imgSrc": "https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=f427_596&quality=85&name=cmoive&di=10132efb18255cecb2311d6f8be978f6&sec=0&imgtype=0&src=http%3A%2F%2Fb.hiphotos.baidu.com%2Fmovie%2Fpic%2Fitem%2F95eef01f3a292df5f1cde472b5315c6034a8734e.jpg"
+    },
+    {
+      "name": "铁道飞虎",
+      "tag": "hui",
+      "tagName":"特惠",
+      "score": "7.7",
+      "imgSrc": "https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=f427_596&quality=85&name=cmoive&di=cfc061b3190b31647420bd1fd4b5b2eb&sec=0&imgtype=0&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fmovie%2Fpic%2Fitem%2F5d6034a85edf8db1df33c8610023dd54564e7491.jpg"
+    },
+    {
+      "name": "摆渡人",
+      "tag": "0",
+      "score": "8.2",
+      "imgSrc": "https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=f427_596&quality=85&name=cmoive&di=52445a68ccf94ab1cc56188c9b0ec3cf&sec=0&imgtype=0&src=http%3A%2F%2Fg.hiphotos.baidu.com%2Fmovie%2Fpic%2Fitem%2F8b82b9014a90f6036d0b77353012b31bb051ed0d.jpg"
+    },
+    {
+      "name": "长城",
+      "tag": "0",
+      "score": "8.2",
+      "imgSrc": "https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=f427_596&quality=85&name=cmoive&di=dbfbee0634caae3c61ef20e3a4cde02f&sec=0&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fmovie%2Fpic%2Fitem%2Fcaef76094b36acaf0335e23574d98d1000e99c25.jpg"
+    }
+  ]
+}

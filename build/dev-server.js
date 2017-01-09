@@ -17,6 +17,16 @@ var port = process.env.PORT || config.dev.port
 var proxyTable = config.dev.proxyTable
 
 var app = express()
+var apiRoutes = express.Router();
+var appData = require('../api.json');
+var movie = appData.movie;
+apiRoutes.get('/movie', function (req, res) {
+  res.json({
+    errno: 0,
+    data: movie
+  });
+});
+app.use('/api', apiRoutes);
 var compiler = webpack(webpackConfig)
 
 var devMiddleware = require('webpack-dev-middleware')(compiler, {

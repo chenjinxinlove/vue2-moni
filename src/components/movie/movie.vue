@@ -1,36 +1,67 @@
 <template>
-  <div class="mod m-movie">
-    <div class="list" style="width: 1042.66px; transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) scale(1) translateZ(0px);">
-      <a class="item" >
+    <div class="list">
         <div class="pic">
-          <i class="tag tag-new">新片</i>
+          <img style="width:100%;height:100%"  :src="m.imgSrc">
+          <i v-show="m.tag" class="tag" :class="'tag-' + m.tag">{{m.tagName}}</i>
         </div>
         <div class="info">
-          <p class="movie-name">星球大战外传：侠盗一号</p>
+          <p class="movie-name">{{m.name}}</p>
           <div class="score">
-            <span class="star-bg"><span class="star-percent" style="width: 76%"><span class="star-inner"></span></span></span>
-            <span class="fen">7.6</span>
+            <star :size="24" :score="m.score"></star>
+            <span class="fen">{{m.score}}</span>
           </div>
         </div>
-      </a>
-      <div class="more-btn border border-all" data-log="{&quot;da_src&quot;: &quot;movieAll&quot;}"><span>全部影片</span></div>
     </div>
-  </div>
 </template>
 <style lang="stylus" rel="stylesheet/stylus">
-
+  .list
+    width 106px
+    margin-right 10px
+    position relative
+    .pic
+      width 106px
+      height 150px
+      position relative
+      .tag
+        position absolute
+        top 0
+        left 0
+        height 18px
+        width 34px
+        color #fff
+        font-size 12px
+        border-radius 2px
+        text-align center
+      .tag-new
+        background #ff791f
+      .tag-hui
+          background #ff2244
+    .info
+      .movie-name
+        margin 5px 0
+        font-size 14px
+        overflow hidden
+        word-break keep-all
+        white-space nowrap
+        text-overflow ellipsis
+      .score
+        display flex
+        .fen
+          color #ff9c38
+          color 12px
+          margin 0 3  px
+          line-height 11px
 </style>
 <script>
+  import star from 'components/star/star';
+
   export default{
     data () {
       return { };
     },
     components: {
+      star
     },
-    props: {
-      food: {
-        type: Object
-      }
-    }
+    props: ['m']
   };
 </script>
