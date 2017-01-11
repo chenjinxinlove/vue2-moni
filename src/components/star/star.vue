@@ -52,8 +52,6 @@
           bg-image('star24_half')
         &.off
           bg-image('star24_off')
-
-
 </style>
 <script>
   const LENGTH = 5;
