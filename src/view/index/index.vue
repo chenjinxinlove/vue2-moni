@@ -65,7 +65,13 @@
         <Slide :name='namePreference' :listData='listData'></Slide>
       </div>
       <div class="goods-wrap">
-
+        <Goods></Goods>
+      </div>
+      <div class='slide-wrap'>
+        <Slide :name='nameXin' :listData='listData'></Slide>
+      </div>
+      <div class='slide-wrap'>
+        <Slide :name='nameHw' :listData='listData'></Slide>
       </div>
       <div style='height:500px'></div>
     </div>
@@ -195,12 +201,16 @@
       height 260px
       background #fff
       margin 10px 0
+    .goods-wrap
+      height 400px
+      background #fff
 </style>
 <script>
   import swipe from './../../components/swipe/swipe';
   import pop from './../../components/pop/pop';
   import movie from './../../components/movie/movie';
   import slide from './../../components/slide/slide';
+  import goods from './../../components/goods/goods';
   import BScroll from 'better-scroll';
   import axios from 'axios';
 
@@ -285,14 +295,17 @@
           ]
         ],
         nameShow: '热门演出',
-        namePreference: '优质特惠'
+        namePreference: '优质特惠',
+        nameXin: '新片预告',
+        nameHw: '院线重温'
       };
     },
     components: {
       Swipe: swipe,
       Pop: pop,
       Movie: movie,
-      Slide: slide
+      Slide: slide,
+      Goods: goods
     },
     created () {
       this.$nextTick(() => {
