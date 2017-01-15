@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca672450-c17c-42dc-b81d-993547a7a47a" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/hotShowing/hotShowing.vue" afterPath="$PROJECT_DIR$/src/components/hotShowing/hotShowing.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/movieInfo/movieInfo.vue" afterPath="$PROJECT_DIR$/src/components/movieInfo/movieInfo.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/movies/movies.vue" afterPath="$PROJECT_DIR$/src/components/movies/movies.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/offlineShow/offlineShow.vue" afterPath="$PROJECT_DIR$/src/components/offlineShow/offlineShow.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/waitShow/waitShow.vue" afterPath="$PROJECT_DIR$/src/components/waitShow/waitShow.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/cinemas/cinemas.vue" afterPath="$PROJECT_DIR$/src/components/cinemas/cinemas.vue" />
     </list>
     <ignored path="vue2-moni.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,47 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/index/index.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="174" column="28" selection-start-line="155" selection-start-column="4" selection-end-line="175" selection-end-column="31" />
-              <folding>
-                <element signature="e#3746#4089#0" expanded="false" />
-                <element signature="e#4105#4184#0" expanded="false" />
-                <element signature="e#4205#5161#0" expanded="false" />
-                <element signature="e#5709#5986#0" expanded="false" />
-                <element signature="e#6003#6202#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="movies.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/movies/movies.vue">
+      <file leaf-file-name="cinemas.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/cinemas/cinemas.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
-              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="waitShow.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/waitShow/waitShow.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="offlineShow.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/offlineShow/offlineShow.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -113,7 +73,6 @@
         <option value="$PROJECT_DIR$/src/components/slide/slide.vue" />
         <option value="$PROJECT_DIR$/src/view/index/index.vue" />
         <option value="$PROJECT_DIR$/src/components/goods/goods.vue" />
-        <option value="$PROJECT_DIR$/src/components/cinemas/cinemas.vue" />
         <option value="$PROJECT_DIR$/src/components/bar/bar.vue" />
         <option value="$PROJECT_DIR$/src/router/index.js" />
         <option value="$PROJECT_DIR$/src/view/film/film.vue" />
@@ -122,6 +81,7 @@
         <option value="$PROJECT_DIR$/src/components/waitShow/waitShow.vue" />
         <option value="$PROJECT_DIR$/src/components/offlineShow/offlineShow.vue" />
         <option value="$PROJECT_DIR$/src/components/movies/movies.vue" />
+        <option value="$PROJECT_DIR$/src/components/cinemas/cinemas.vue" />
       </list>
     </option>
   </component>
@@ -425,6 +385,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue2-moni" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue2-moni" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cinemas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -536,12 +518,12 @@
       <workItem from="1483760080423" duration="115000" />
       <workItem from="1483760278581" duration="39131000" />
       <workItem from="1484142222672" duration="17231000" />
-      <workItem from="1484472059424" duration="13734000" />
+      <workItem from="1484472059424" duration="14806000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83291000" />
+    <option name="totallyTimeSpent" value="84363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -862,14 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/cinemas/cinemas.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1188">
@@ -915,18 +889,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/waitShow/waitShow.vue">
+    <entry file="file://$PROJECT_DIR$/src/components/movies/movies.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/offlineShow/offlineShow.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="72">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -945,10 +911,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/movies/movies.vue">
+    <entry file="file://$PROJECT_DIR$/src/components/waitShow/waitShow.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/offlineShow/offlineShow.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/cinemas/cinemas.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
           <folding />
         </state>
       </provider>

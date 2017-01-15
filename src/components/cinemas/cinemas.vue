@@ -1,6 +1,11 @@
 <template>
-  <div>
-    影院
+  <div class="cinemas">
+    <div class="cinemas-select">
+      <span>全城</span>
+      <span>品牌</span>
+      <span>筛选</span>
+      <span>搜索</span>
+    </div>
   </div>
 </template>
 <style lang="stylus" rel="stylesheet/stylus">
