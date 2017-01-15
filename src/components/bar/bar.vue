@@ -70,7 +70,7 @@
     watch: {
       'selected': function (val) {
         this.$store.commit('changeSelected', val);
-        this.$router.push(val);
+        this.$router.push('/' + val);
       }
     }
   };
