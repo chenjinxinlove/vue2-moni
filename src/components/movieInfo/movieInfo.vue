@@ -86,6 +86,17 @@
         border 1px solid #ff791f
         color #ff791f
         text-align center
+    .foot
+      height 40px
+      line-height 40px
+      font-size 12px
+      text-align center
+      color #ccc
+      border-bottom 1px solid #ccc
+      .tag
+        color #fbab00
+        border 1px solid #fbab00
+        border-radius 2px
 </style>
 <script>
   import star from 'components/star/star';

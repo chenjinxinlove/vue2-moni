@@ -24,17 +24,20 @@
   .bar
     display flex
     position fixed
-    top 90px
+    top 91px
     width 100%
+    z-index 999
+    background #fff
     .bar-link
       display inline-block
-      height 40px
-      line-height 40px
+      height 39px
+      line-height 39px
       text-align center
       width 33%
       font-size 14px
       text-decoration none
       color #000
+      background #fff
     .movies-link-active
       color #ff6d57
       span
