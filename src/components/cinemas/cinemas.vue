@@ -5,7 +5,7 @@
       <span>品牌</span>
       <span>筛选</span>
       <span>搜索</span>
-      
+      基础呀
     </div>
   </div>
 </template>

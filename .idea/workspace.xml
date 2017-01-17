@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca672450-c17c-42dc-b81d-993547a7a47a" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/cinemas/cinemas.vue" afterPath="$PROJECT_DIR$/src/components/cinemas/cinemas.vue" />
     </list>
     <ignored path="vue2-moni.iws" />
@@ -28,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/cinemas/cinemas.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -520,15 +519,15 @@
       <workItem from="1483760278581" duration="39131000" />
       <workItem from="1484142222672" duration="17231000" />
       <workItem from="1484472059424" duration="14918000" />
-      <workItem from="1484568838846" duration="35000" />
+      <workItem from="1484568838846" duration="640000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84510000" />
+    <option name="totallyTimeSpent" value="85115000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14172813" sideWeight="0.64935064" order="0" side_tool="false" content_ui="combo" />
@@ -900,7 +899,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/cinemas/cinemas.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
           <folding />
         </state>
       </provider>
