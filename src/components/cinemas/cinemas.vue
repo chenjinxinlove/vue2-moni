@@ -5,12 +5,20 @@
       <span>品牌</span>
       <span>筛选</span>
       <span>搜索</span>
-      基础呀
     </div>
   </div>
 </template>
 <style lang="stylus" rel="stylesheet/stylus">
-
+.cinemas
+ .cinemas-select
+    height 40px
+    line-height 40px
+    width 100%
+    border-bottom 1px solid #ccc
+    span
+      display inline-block
+      width 24%
+      text-align center
 </style>
 <script>
   export default{
