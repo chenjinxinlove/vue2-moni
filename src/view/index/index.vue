@@ -311,7 +311,7 @@
       this.$nextTick(() => {
         this._initScroll();
       });
-      axios.get('/api/movie')
+      axios.get('http://123.57.156.3:8082/users/api/movie')
         .then((res) => {
           var data = res.data;
           if (data.errno === ERR_OK) {
