@@ -3,9 +3,7 @@
     <div class="popContent" v-show="isShowPop">
         <div class="expand-wrapper-img">
           <div class="img-wrapper">
-            <a href="#" class="expand-pop-link" style="width:100%;height:100%">
               <img style="width:100%;height:100%" src="https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/bainuo_cmovie/pic/item/9c16fdfaaf51f3dea849e00b9deef01f3b2979e1.png" alt="">
-            </a>
           </div>
         </div>
     </div>

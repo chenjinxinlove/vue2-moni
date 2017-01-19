@@ -315,7 +315,7 @@
         .then((res) => {
           var data = res.data;
           if (data.errno === ERR_OK) {
-              this.movies = data.data;
+              this.movies = data.data.movie;
               this.$nextTick(() => {
                 this._initMoviesScroll();
               });
