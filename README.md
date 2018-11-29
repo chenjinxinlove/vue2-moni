@@ -5,13 +5,13 @@
 
 #### 手机可以直接扫描查看
 
-![image](http://oh14ph22t.bkt.clouddn.com/erweima.png)
+![image](http://www.chenjinxinlove.com/cdn/qiniu/erweima.png)
 
 [电脑地址](http://1.fullpagedemo.applinzi.com/#/index)
 
 #### 效果图
-![image](http://oh14ph22t.bkt.clouddn.com/Screenshot_2017-01-19-22-37-38-896_%E5%BE%AE%E4%BF%A1%20-%20%E5%89%AF%E6%9C%AC.png)
-![image](http://oh14ph22t.bkt.clouddn.com/Screenshot_2017-01-19-22-37-46-025_%E5%BE%AE%E4%BF%A1.png)
+![image](http://www.chenjinxinlove.com/cdn/qiniu/Screenshot_2017-01-19-22-37-38-896_%E5%BE%AE%E4%BF%A1%20-%20%E5%89%AF%E6%9C%AC.png)
+![image](http://www.chenjinxinlove.com/cdn/qiniu/Screenshot_2017-01-19-22-37-46-025_%E5%BE%AE%E4%BF%A1.png)
 
 ```
 # 安装
